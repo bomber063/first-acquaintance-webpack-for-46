@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">   -->
+    <!-- 这个网页放到手机上之后得到的效果跟方方的不同，后面找了一下午才发现是这个viewport的问题，服了  -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <!-- 这里是为了让自己写的style.css覆盖swiper库里面的swiper-button-prev和swiper-button-next的部分内容 -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_1002181_f7o88fjsqeg.js"></script>
+    <!-- <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style> -->
+    <style>
+        .siteWelcome {
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: white;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            /* opacity: 0.3; */
+        }
+
+        .siteWelcome.active {
+            display: flex;
+        }
+    </style>
+</head>
+
+
+<!-- <script>
+    // setTimeout(function() {
+    //     siteWelcome.classList.remove('active')
+    // }, 1000);
+    siteWelcome.classList.remove('active')
+</script> -->
+
+<body>
+    <div id='siteWelcome' class='siteWelcome active'>
+        <div class="loading"></div>
+    </div>
+    <div id='topNavBar' class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo" style="float: left;">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+            <nav id='menu' class='menu'>
+                <ul class="clearfix">
+                    <li><a href="#siteAbout">关于</a></li>
+                    <li><a href="#siteSkills">技能</a></li>
+                    <li><a href="#siteWorks">作品</a>
+                        <ul class='submenu'>
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                        <ul class='submenu'>
+                            <li>博客1</li>
+                            <li>博客2</li>
+                            <li>博客3</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class='banner'>
+        <div class='mask'></div>
+    </div>
+    <main>
+        <div data-x id='siteAbout' class="userCard">
+            <div class="puctureAndText clearfix">
+                <div class="picture">
+                    <img src="./img/avatar.jpg" alt="头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>唐艺轰</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>29</dd>
+                        <dt>所在城市</dt>
+                        <dd>深圳</dd>
+                        <dt>邮箱</dt>
+                        <dd>tangyihong063@163.com</dd>
+                        <dt>手机</dt>
+                        <dd>13888888888</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg> </a>
+                <!--对于内联元素，a标签结束如果有空格在这里就会留下一个空格导致下划线产生，
+                        如果设置成display:inline-block就没有下划线-->
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-tuite"></use>
+                    </svg></a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
+        <a href="./resume.pdf" class="button" download>下载PDF简历</a>
+        <p class="selfIntroduction">
+            唐艺轰，前端工程师，现在在饥人谷学习中。<br>
+            技能：前端开发，Rails 开发，Node.js 开发
+        </p>
+
+    </main>
+    <section data-x id='siteSkills' class="skillT">
+        <h2>技能</h2>
+        <ol class="skills clearfix">
+            <li>
+                <h3>HTML 5 &amp; CSS 3</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:20%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:20%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>jQuery</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:40%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Vue.js</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:40%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>React.js</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:60%"></div>
+                </div>
+            </li>
+            <li>
+                <h3>Node.js</h3>
+                <div class="bar1">
+                    <div class="bar2" style="width:60%"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section data-x id='siteWorks' class="portfolio">
+        <h2>作品集</h2>
+        <div class="jobs">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src='img/nav-page.jpg' class="swiper-slide">
+                    <img src='img/canvas.jpg' class="swiper-slide">
+                    <img src='img/apple-style-slide.jpg' class="swiper-slide">
+                    <!-- 插入三个本地截图 -->
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div>这个是下面的滚动吧条，不需要可以删除 -->
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- 由于swiper-button-prev和swiper-button-next的在父元素里面无法通过padding移动到外面来，所以移到父元素的外面来 -->
+        </div>
+    </section>
+    <section class='message'>
+        <h2>留言</h2>
+        <ol id='messageList'>
+
+        </ol>
+        <form id="postMessageForm">
+            <label for="">姓名</label>
+            <input type="text" name="name">
+            <label for="">留言内容</label>
+            <input type="text" name="content">
+            <input type="submit" value="提交">
+        </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.14.0/dist/av-min.js"></script>
+
+    <script src="./base/View.js"></script>
+    <script src="./base/Model.js"></script>
+    <script src="./base/Controller.js"></script>
+
+
+
+    <script src="./js/init-swiper.js"></script>
+    <script src='./js/waiting.js'></script>
+    <!-- 该script是载入的等待界面的动画 -->
+    <script src='./js/auto-slide-up.js'></script>
+    <script src='./js/stick-topbar.js'></script>
+
+    <!-- 该script是Y方向滚动大于零之后topNavBar增加变化效果 -->
+
+    <script src="./mouseenter.js"></script>
+    <script src='./js/smoothly-navigation.js'></script>
+    <script src="./js/message.js"></script>
+</body>
+
+</html>
