@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #EFEFEF;
+  background-color: yellow;
   /* color: #B7B7B7; */ }
 
 .topNavBar {
@@ -430,16 +430,15 @@ section.portfolio .swiper-button-next {
   margin: 100px auto;
   width: 700px; }
 
-section ol#messageList {
+section ol#messaageList {
   max-width: 700px;
   margin: 0 auto;
   list-style: none;
   background: #F5F5F5;
   border-top: 1px solid #CCC; }
-
-section ol#messageList li {
-  padding: 16px;
-  border-bottom: 1px solid #CCC; }
+  section ol#messaageList li {
+    padding: 16px;
+    border-bottom: 1px solid #CCC; }
 
 /* 如果不用float也可以使用绝对定位来布局，在float中使用margin-top来控制顶部距离，在绝对定位中通过top来控制顶部距离； */
 .clearfix::after {

@@ -1,5 +1,6 @@
 body{
-    background-color: #EFEFEF;
+    // background-color: #EFEFEF;
+    background-color:yellow;
     /* color: #B7B7B7; */
 }
 
@@ -501,18 +502,32 @@ section.portfolio .swiper-button-next{
     width: 700px;
 }
 
-section ol#messageList{
-    max-width: 700px;
-    margin:0 auto;
-    list-style: none;
-    background:#F5F5F5;
-    border-top:1px solid #CCC;
+section{
+    ol#messaageList{
+        max-width: 700px;
+        margin:0 auto;
+        list-style: none;
+        background:#F5F5F5;
+        border-top:1px solid #CCC;
+        li{
+             padding: 16px;
+            border-bottom:1px solid #CCC;
+        }
+    }
 }
 
-section ol#messageList li{
-    padding: 16px;
-    border-bottom:1px solid #CCC;
-}
+// section ol#messageList{
+//     max-width: 700px;
+//     margin:0 auto;
+//     list-style: none;
+//     background:#F5F5F5;
+//     border-top:1px solid #CCC;
+// }
+
+// section ol#messageList li{
+//     padding: 16px;
+//     border-bottom:1px solid #CCC;
+// }
 
 
 
