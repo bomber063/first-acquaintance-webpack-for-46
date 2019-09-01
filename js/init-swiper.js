@@ -40,3 +40,11 @@
     }
     controller.init(view)//第一步传入一个外部的view作为参数
 }.call()
+
+
+let numbers = [1,2,3]; 
+let dou = numbers.map((number)=>number*2); 
+console.log(dou);
+
+
+
