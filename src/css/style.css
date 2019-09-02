@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: yellow;
+  background-color: #EFEFEF;
   /* color: #B7B7B7; */
 }
 
@@ -498,7 +498,7 @@ section.portfolio .swiper-button-next {
   width: 700px;
 }
 
-section ol#messaageList {
+section ol#messageList {
   max-width: 700px;
   margin: 0 auto;
   list-style: none;
@@ -506,7 +506,7 @@ section ol#messaageList {
   border-top: 1px solid #CCC;
 }
 
-section ol#messaageList li {
+section ol#messageList li {
   padding: 16px;
   border-bottom: 1px solid #CCC;
 }

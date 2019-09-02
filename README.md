@@ -293,3 +293,21 @@ $ node-sass src -o dist
 $ node-sass src -o dist -w src
 ```
 * -w src就是监听src目录的变化
+### 监控html和jpg文件变化
+* 在google上搜索watch cli，找到对应的[watch-cli](https://github.com/doowb/watch-cli)
+* 先npm全局安装
+```
+npm i -g watch-cli
+```
+* 然后通过监控watch -p监控某个路径的文件变化后去执行-c后面的变化，比如监控路径src/index.html变化，如果变化就把目录src/index.html cp(copy到) 目录dist/下面
+```
+watch -p "src/index.html" -c "cp src/index.html dist/"
+```
+* 继续监控jpg文件变化,在监控之前需要先执行一次下面代码，代表改变了一次jpg,cp代表拷贝（copy files and directories），-r，代表递归（copy directories recursively）
+```
+cp -r src/img dist/img
+```
+* 然后再
+```
+watch -p "src/img/**/*" -c "cp -r src/img/**/* dist/img"
+```

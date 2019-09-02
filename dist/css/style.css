@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: yellow;
+  background-color: #EFEFEF;
   /* color: #B7B7B7; */ }
 
 .topNavBar {
@@ -139,7 +139,7 @@ li.active > .submenu {
 
 .banner {
   height: 515px;
-  background-image: url(./img/rs-cover.jpg);
+  background-image: url(../img/rs-cover.jpg);
   /* background-color: rgba(0 ,0 ,0 ,0.8 );直接这里来写覆盖的透明度没有效果，要在做一个div覆盖才有效果了 */
   background-size: cover;
   /*图片大小缩小到指定的515px像素大小*/
@@ -430,13 +430,13 @@ section.portfolio .swiper-button-next {
   margin: 100px auto;
   width: 700px; }
 
-section ol#messaageList {
+section ol#messageList {
   max-width: 700px;
   margin: 0 auto;
   list-style: none;
   background: #F5F5F5;
   border-top: 1px solid #CCC; }
-  section ol#messaageList li {
+  section ol#messageList li {
     padding: 16px;
     border-bottom: 1px solid #CCC; }
 
