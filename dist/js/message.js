@@ -1,3 +1,4 @@
+alert(1);
 !function () {
   var view = View('.message');
   var model = Model({
