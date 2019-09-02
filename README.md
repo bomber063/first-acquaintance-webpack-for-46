@@ -312,9 +312,12 @@ cp -r src/img dist/img
 watch -p "src/img/**/*" -c "cp -r src/img/**/* dist/img"
 ```
 ### 目前为止的总结下出现这么多工具的原因及更多需求
-* 由于前段比较**分裂**，
-* CSS方面：有人喜欢写CSS,有人喜欢写SASS，还有LESS。
-* JS方面：有人喜欢写ES5有些喜欢ES6，还有ES8的JS。
+* 前端的语言多，有CSS/JS/HTML/img/SVG
+* 变化快导致由于前端各个语言比较**分裂**，
+* CSS方面：有人喜欢写CSS,有人喜欢写SASS，还有LESS，SCSS,stylus（它可以兼容LESS和SASS）。
+* JS方面：有人喜欢写ES5有些喜欢ES6，还有ES8的JS，coffee,babel,TypeScript,Elm。
+* HTML方面：Jade——Pug——Slim
+* 如此多的命令导致命令行都不一定能够记住。
 * 其实都一样，只是换一个命令行工具而已，我们用翻译工具同意翻译成你的浏览器，比如IE能够运行的，用babel就可以实现。
 * 还有更复杂的事情，比如上节说的**[缓存](https://github.com/bomber063/Session-LocalStorage-Cache-Control-for-45)**,需要在每一个css后面加上一个v=1，比如
 ```
@@ -325,3 +328,4 @@ watch -p "src/img/**/*" -c "cp -r src/img/**/* dist/img"
 * 目前用以上的工具还做不到，而且**缺点是需要打开5个窗口**，后面前端通过一个工具来代替这个5个窗口的功能，这个工具一开始叫做[Grunt](https://www.gruntjs.net/getting-started),**不过现在不用学Grunt，因为已经过时了**，因为它被[Gulp](https://www.gulpjs.com.cn/)替代。因为Gulp比Grunt更快。**然后Gulp也不用学了**，因为**被[webpack](https://www.webpackjs.com/)替代了**
 * 如果面试官问会不会Grunt或者Gulp，**只回答我用的是webpack**，因为webpack要比前两者要高一级。
 ### webpack
+* 见[first-acquaintance-webpack2-for-46](https://github.com/bomber063/first-acquaintance-webpack2-for-46)
